@@ -13,7 +13,7 @@ final class ViewModel: ObservableObject {
     private var client: OpenAISwift?
     
     func setup() {
-        client = OpenAISwift(config: OpenAISwift.Config.makeDefaultOpenAI(apiKey: "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"))
+        client = OpenAISwift(config: OpenAISwift.Config.makeDefaultOpenAI(apiKey: "APIKEY"))
     }
     
     func send(text: String, completion: @escaping (String) -> Void) {
